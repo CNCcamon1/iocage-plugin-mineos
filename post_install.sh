@@ -10,6 +10,7 @@ fi
 
 # Clone source from official MineOS repository
 cd /usr/local/games
+echo "TEST"
 git config --global url."https://".insteadOf git://
 git clone https://github.com/hexparrot/mineos-node --quiet --depth 1 minecraft
 if [ $? -ne 0 ] ; then
